@@ -10,4 +10,7 @@ func ShowInts() {
 	fmt.Println("comunInt: ", comunInt)
 	fmt.Println("intOf32: ", intOf32)
 	fmt.Println("intOf64: ", intOf64)
+
+	fmt.Println("test: ", Name)
+
 }
