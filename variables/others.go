@@ -2,6 +2,7 @@ package variables
 
 import (
 	"fmt"
+	"strconv"
 	"time"
 )
 
@@ -23,5 +24,6 @@ func OtherVariables() {
 }
 
 func ConvertToText(number int) (bool, string) {
-	return true, "texto xD"
+	text := strconv.Itoa(number)
+	return true, text
 }
