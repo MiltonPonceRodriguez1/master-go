@@ -6,7 +6,8 @@ import (
 	// "master-go/keyboard"
 	// "runtime"
 	// "master-go/iterations"
-	"master-go/files"
+	// "master-go/files"
+	"master-go/functions"
 )
 
 func main() {
@@ -42,6 +43,9 @@ func main() {
 	// files.ConcatTable()
 
 	// files.ReadFile()
-	files.ReadFileTwo()
+	// files.ReadFileTwo()
+
+	// functions.Calculations()
+	functions.CallClosure()
 
 }
