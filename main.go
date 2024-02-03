@@ -5,7 +5,8 @@ import (
 	// "master-go/exercises"
 	// "master-go/keyboard"
 	// "runtime"
-	"master-go/iterations"
+	// "master-go/iterations"
+	"master-go/files"
 )
 
 func main() {
@@ -33,6 +34,14 @@ func main() {
 
 	// keyboard.InputNumbers()
 
-	iterations.Loop()
+	// iterations.Loop()
+
+	// fmt.Println(exercises.PrintMultiplicationTable())
+
+	// files.WriteTable()
+	// files.ConcatTable()
+
+	// files.ReadFile()
+	files.ReadFileTwo()
 
 }
