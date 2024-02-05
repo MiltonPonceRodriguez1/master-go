@@ -46,6 +46,7 @@ func main() {
 	// files.ReadFileTwo()
 
 	// functions.Calculations()
-	functions.CallClosure()
+	// functions.CallClosure()
+	functions.Exponent(1)
 
 }
