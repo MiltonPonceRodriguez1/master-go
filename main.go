@@ -7,7 +7,8 @@ import (
 	// "runtime"
 	// "master-go/iterations"
 	// "master-go/files"
-	"master-go/arrays_slices"
+	// "master-go/arrays_slices"
+	"master-go/maps"
 	// "master-go/functions"
 )
 
@@ -51,6 +52,8 @@ func main() {
 	// functions.Exponent(1)
 
 	// arrays_slices.ShowArrays()
-	arrays_slices.Capacity()
+	// arrays_slices.Capacity()
+
+	maps.ShowMaps()
 
 }
