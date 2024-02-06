@@ -8,7 +8,8 @@ import (
 	// "master-go/iterations"
 	// "master-go/files"
 	// "master-go/arrays_slices"
-	"master-go/maps"
+	// "master-go/maps"
+	"master-go/users"
 	// "master-go/functions"
 )
 
@@ -54,6 +55,7 @@ func main() {
 	// arrays_slices.ShowArrays()
 	// arrays_slices.Capacity()
 
-	maps.ShowMaps()
+	// maps.ShowMaps()
+	users.UserRegister()
 
 }
