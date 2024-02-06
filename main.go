@@ -7,7 +7,8 @@ import (
 	// "runtime"
 	// "master-go/iterations"
 	// "master-go/files"
-	"master-go/functions"
+	"master-go/arrays_slices"
+	// "master-go/functions"
 )
 
 func main() {
@@ -47,6 +48,9 @@ func main() {
 
 	// functions.Calculations()
 	// functions.CallClosure()
-	functions.Exponent(1)
+	// functions.Exponent(1)
+
+	// arrays_slices.ShowArrays()
+	arrays_slices.Capacity()
 
 }
