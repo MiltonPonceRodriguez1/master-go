@@ -9,7 +9,9 @@ import (
 	// "master-go/files"
 	// "master-go/arrays_slices"
 	// "master-go/maps"
-	"master-go/users"
+	e "master-go/interfaces_exercises"
+	"master-go/models"
+	// "master-go/users"
 	// "master-go/functions"
 )
 
@@ -56,6 +58,12 @@ func main() {
 	// arrays_slices.Capacity()
 
 	// maps.ShowMaps()
-	users.UserRegister()
+	// users.UserRegister()
+
+	milton := new(models.Man)
+	e.HumansBreathing(milton)
+
+	ana := new(models.Women)
+	e.LivingBeingBreathing(ana)
 
 }
