@@ -1,19 +1,19 @@
 package main
 
-import (
-	// "fmt"
-	// "master-go/exercises"
-	// "master-go/keyboard"
-	// "runtime"
-	// "master-go/iterations"
-	// "master-go/files"
-	// "master-go/arrays_slices"
-	// "master-go/maps"
-	e "master-go/interfaces_exercises"
-	"master-go/models"
-	// "master-go/users"
-	// "master-go/functions"
-)
+import "master-go/defer_panic_recovery"
+
+// "fmt"
+// "master-go/exercises"
+// "master-go/keyboard"
+// "runtime"
+// "master-go/iterations"
+// "master-go/files"
+// "master-go/arrays_slices"
+// "master-go/maps"
+// e "master-go/interfaces_exercises"
+// "master-go/models"
+// "master-go/users"
+// "master-go/functions"
 
 func main() {
 	// state, text := variables.ConvertToText(1588)
@@ -44,26 +44,36 @@ func main() {
 
 	// fmt.Println(exercises.PrintMultiplicationTable())
 
+	// ? Manejo de Archivos
 	// files.WriteTable()
 	// files.ConcatTable()
 
 	// files.ReadFile()
 	// files.ReadFileTwo()
 
+	// ? Recursion y Clousures
 	// functions.Calculations()
 	// functions.CallClosure()
 	// functions.Exponent(1)
 
+	// ? Slices
 	// arrays_slices.ShowArrays()
 	// arrays_slices.Capacity()
 
+	// ? Mapas (Arreglos asociativos)
 	// maps.ShowMaps()
+
+	// ? Modelos
 	// users.UserRegister()
 
-	milton := new(models.Man)
-	e.HumansBreathing(milton)
+	// ? Herencia, Polimorfismo e Interfaces
+	// milton := new(models.Man)
+	// e.HumansBreathing(milton)
 
-	ana := new(models.Women)
-	e.LivingBeingBreathing(ana)
+	// ana := new(models.Women)
+	// e.LivingBeingBreathing(ana)
+
+	// ? Defer, Panic y Recovery
+	defer_panic_recovery.ShowPanic()
 
 }
