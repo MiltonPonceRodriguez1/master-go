@@ -1,19 +1,22 @@
 package main
 
-import "master-go/defer_panic_recovery"
-
-// "fmt"
-// "master-go/exercises"
-// "master-go/keyboard"
-// "runtime"
-// "master-go/iterations"
-// "master-go/files"
-// "master-go/arrays_slices"
-// "master-go/maps"
-// e "master-go/interfaces_exercises"
-// "master-go/models"
-// "master-go/users"
-// "master-go/functions"
+import (
+	// "master-go/defer_panic_recovery"
+	"fmt"
+	"master-go/gorutines"
+	// "fmt"
+	// "master-go/exercises"
+	// "master-go/keyboard"
+	// "runtime"
+	// "master-go/iterations"
+	// "master-go/files"
+	// "master-go/arrays_slices"
+	// "master-go/maps"
+	// e "master-go/interfaces_exercises"
+	// "master-go/models"
+	// "master-go/users"
+	// "master-go/functions"
+)
 
 func main() {
 	// state, text := variables.ConvertToText(1588)
@@ -74,6 +77,12 @@ func main() {
 	// e.LivingBeingBreathing(ana)
 
 	// ? Defer, Panic y Recovery
-	defer_panic_recovery.ShowPanic()
+	// defer_panic_recovery.ShowPanic()
 
+	// ? GoRutines
+	go gorutines.MySlowName("Milton")
+
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
 }
