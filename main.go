@@ -1,9 +1,8 @@
 package main
 
 import (
-	// "master-go/defer_panic_recovery"
-	"fmt"
-	"master-go/gorutines"
+	// "master-go/gorutines"
+	"master-go/webserver"
 	// "fmt"
 	// "master-go/exercises"
 	// "master-go/keyboard"
@@ -80,11 +79,13 @@ func main() {
 	// defer_panic_recovery.ShowPanic()
 
 	// ? GoRutines
-	chanel1 := make(chan bool)
-	go gorutines.MySlowName("Milton", chanel1)
+	// chanel1 := make(chan bool)
+	// go gorutines.MySlowName("Milton", chanel1)
 
-	defer func() {
-		<-chanel1
-	}()
-	fmt.Println("Estoy aqui")
+	// defer func() {
+	// 	<-chanel1
+	// }()
+	// fmt.Println("Estoy aqui")
+
+	webserver.StartWebServer()
 }
