@@ -2,7 +2,8 @@ package main
 
 import (
 	// "master-go/gorutines"
-	"master-go/webserver"
+	"master-go/middleware"
+	// "master-go/webserver"
 	// "fmt"
 	// "master-go/exercises"
 	// "master-go/keyboard"
@@ -78,7 +79,7 @@ func main() {
 	// ? Defer, Panic y Recovery
 	// defer_panic_recovery.ShowPanic()
 
-	// ? GoRutines
+	// ? GoRutines and Chanels
 	// chanel1 := make(chan bool)
 	// go gorutines.MySlowName("Milton", chanel1)
 
@@ -87,5 +88,9 @@ func main() {
 	// }()
 	// fmt.Println("Estoy aqui")
 
-	webserver.StartWebServer()
+	// ? Servidor WEB
+	// webserver.StartWebServer()
+
+	// ? Middlewares
+	middleware.MyMiddleware()
 }
