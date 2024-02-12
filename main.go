@@ -80,9 +80,11 @@ func main() {
 	// defer_panic_recovery.ShowPanic()
 
 	// ? GoRutines
-	go gorutines.MySlowName("Milton")
+	chanel1 := make(chan bool)
+	go gorutines.MySlowName("Milton", chanel1)
 
+	defer func() {
+		<-chanel1
+	}()
 	fmt.Println("Estoy aqui")
-	var x string
-	fmt.Scanln(&x)
 }
